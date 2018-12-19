@@ -1,0 +1,39 @@
+<div class="header">
+  <div class="busca">
+    <input type="text" class="pesquisa" placeholder="Pesquise Aqui" />
+    <fa-icon class="icone" [icon]="faSearch"></fa-icon>
+  </div>
+  <div class="logo">
+    <img height="50px" src="../../assets/img/logo.png">
+  </div>
+  <div class="direita">
+    <div class="grupoEconomico">
+      Grupo Economico:
+      <select class="visaoAgregada">
+        <option *ngFor="let item of grupo">{{item}}</option>
+      </select>
+    </div>
+    <div class="user">
+      <fa-icon class="icone icone-usuario" [icon]="faUser"></fa-icon>
+      {{user}}
+      <fa-icon class="chevron icone-usuario" [icon]="faChevronDown"></fa-icon>
+    </div>
+    <div class="notificacao">
+      <fa-icon class="icone-usuario" [icon]="faBell">
+      </fa-icon>
+      <div class="numeroNotificacao">
+        <span>{{numeroNotificacao}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sidebar">
+  <ul>
+    <li class="itemPainel"><img src="../../assets/img/globo.png">Painel de Gestão</li>
+    <li class="itemPainel"><img src="../../assets/img/arroba.png">Conta Digital</li>
+    <li class="itemPainel"><img src="../../assets/img/grafico.png">Ant. de Recebíveis</li>
+  </ul>
+</div>
+<div class="conteudo">
+  <router-outlet></router-outlet>
+</div>

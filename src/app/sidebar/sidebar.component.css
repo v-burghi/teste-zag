@@ -1,0 +1,141 @@
+.sidebar {
+    background-color: #00233d;
+    width: 20%;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    display: inline-flex;
+    transform: translate(0, -50.3%);
+
+}
+
+.conteudo {
+    display: inline-flex;
+}
+
+.itemPainel {
+    color: #ffffff;
+    border-bottom: 2px solid #3273a3;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.header{
+    height: 60px;
+    width: 100%;
+}
+
+.icone{
+    color: #848484;
+    line-height: 55px;
+   
+}
+
+.icone-usuario {
+    margin: 0 20px 0 20px ;
+}
+
+.busca {
+    border-right: 2px solid #848484;
+    width: 19.8%;
+    display: inline-flex;
+    vertical-align: top;
+    
+}
+
+.logo{
+    display: inline-flex;
+    margin-left: 1%;
+}
+
+.notificacao{
+    display: inline-flex;
+    vertical-align: top;
+    background-color: #4997d1;  
+    color: #ffffff;
+    line-height: 55px;
+    position: relative;
+}
+
+.chevron {
+    color: #4997d1;
+
+}
+.numeroNotificacao{
+    height: 15px;
+    width: 15px;
+    color: #ffffff;
+    vertical-align: baseline;
+    margin-top: 1%;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.numeroNotificacao > span {
+  background: #ff0000;
+  border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+  transform: translate(-12px, -10px);
+}
+
+.grupoEconomico {
+    display: inline-flex;
+    vertical-align: top;
+    line-height: 55px;
+}
+
+.visaoAgregada{
+    margin: 0 20px 0 20px;
+    border-color: #4997d1;
+    width: 180px;
+    text-align: center;
+    text-align-last: center;
+    color: #848484;
+    font-size: 16px;
+}
+
+.direita {
+    text-align: right;
+    display: inline-flex;
+    vertical-align: top;
+    margin-left: 27%;
+}
+
+.user{
+    display: inline-flex;
+    vertical-align: top;
+    background-color: #00233d;
+    color: #ffffff;
+    line-height: 55px;
+
+}
+.pesquisa {
+    width: 75%;
+    border: none;
+    line-height: 55px;
+    text-align: right;
+    margin-right: 15%;
+    font-size: 16px;
+    height: 55px;
+}
+
+ul {
+    margin: 0 0 0 -13%;
+}
+
+li {
+    list-style-type: none;
+    height: 60px;
+}
+
+input:focus {
+    outline-width: 0;
+}

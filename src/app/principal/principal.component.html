@@ -1,0 +1,69 @@
+<div class="conteudoInterno">
+  <div class="breadcrumb">
+    Página Principal > Painel de Gestão
+  </div>
+  <div class="titulo">
+    <img src="../../assets/img/globoCinza.png" height="45px">
+    <span class="textoTitulo">Painel de Gestão</span>
+  </div>
+  <div class="produto"> Produto:
+    <select>
+      <option *ngFor="let item of produto">{{item}}</option>
+    </select>
+  </div>
+  <div class="wrapper">
+    <div class="atalhos atalhoAlerta">
+      <div class="tituloAtalhoAlerta">
+        <h2>Atalhos</h2>
+        <hr>
+      </div>
+      <div>
+        <div class="botoesOperacional">
+          <p> Operacional</p>
+          <div style="display:block">
+            <button style="display: inline-flex">Envio</button>
+            <button style="display: inline-flex">Assinatura</button>
+          </div>
+          <div style="display:block">
+            <button style="display: inline-flex">Envio de Duplicatas</button>
+            <button style="display: inline-flex">Assinatura Digital</button>
+          </div>
+          <div style="display:block">
+            <button style="display: inline-flex">Nova Operação</button>
+          </div>
+        </div>
+        <div class="botoesGeral">
+          <p> Geral</p>
+          <div>
+            <button style="display: block">Carteira</button>
+          </div>
+          <div>
+            <button style="display: block; margin-bottom: 0">Instruções</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alertas atalhoAlerta">
+      <div class="tituloAtalhoAlerta">
+        <h2>Alertas</h2>
+        <hr>
+        <div class="alerta">
+          <p>23 Notas Canceladas</p>
+        </div>
+        <div class="alerta">
+          <p style="display: inline-flex">13 Notas Canceladas</p>
+          <select style="display: inline-flex">
+            <option *ngFor="let item of acoes">{{item.acao}}</option>
+          </select>
+        </div>
+        <div class="alerta">
+          <p style="display: inline-flex">23 Notas Canceladas</p>
+          <select style="display: inline-flex">
+            <option *ngFor="let item of acoes">{{item.acao}}</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
